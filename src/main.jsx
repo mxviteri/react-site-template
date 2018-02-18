@@ -1,6 +1,5 @@
 'use strict'
 
-require('bootstrap/dist/css/bootstrap.css');
 require('./styles/main.scss');
 
 const React = require('react');

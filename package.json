@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "[ -d lib ] || mkdir lib && cp index.html lib/ && webpack-dev-server --inline --content-base lib/ --history-api-fallback"
+    "start": "webpack-dev-server --inline --content-base lib/ --history-api-fallback",
+    "build": "NODE_ENV=production webpack -p"
   },
   "author": "",
   "license": "ISC",
@@ -25,13 +25,16 @@
     "url-loader": "^0.5.9"
   },
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "bootstrap": "^3.3.7",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
     "path": "^0.12.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router": "^2.8.1",
-    "webpack": "^3.5.5",
+    "webpack": "^3.11.0",
     "webpack-dev-server": "^2.7.1"
   }
 }
