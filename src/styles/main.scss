@@ -1,0 +1,26 @@
+/* Insert custom styling here */
+.header {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 2px solid gray;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.footer {
+  width: 100%;
+  border: 2px dashed gray;
+  position: absolute;
+  bottom: 0;
+}
